@@ -1,3 +1,6 @@
+#First program for first 100 prime numbers 
+#First impletation 
+# Will convert this in the class
 
 def isprime(n):
     if(n==0 or n==1):
@@ -7,21 +10,17 @@ def isprime(n):
       if(n%i==0):
        return False
 
-     
     return True
 
-squares=[]
+square=[]
 for i in range(43345):
  if (isprime(i)):
-    #if (len(squares) == 101):
-     # break
-     a = len(squares) 
+    
+     a = len(square) 
      if (a==100):
        break
  
-     squares.append(i)
-'''a = len(squares)  
-      if (a==100) 
-      break'''      
-print(len(squares))      
-print(squares)
+     square.append(i)
+    
+print(len(square))      
+print(square)
