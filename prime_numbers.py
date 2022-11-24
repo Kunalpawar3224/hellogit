@@ -12,15 +12,15 @@ def isprime(n):
 
     return True
 
-square=[]
-for i in range(43345):
+check_prime=[]
+for i in range(3434):
  if (isprime(i)):
     
-     a = len(square) 
+     a = len(check_prime) 
      if (a==100):
        break
  
-     square.append(i)
+     check_prime.append(i)
     
-print(len(square))      
-print(square)
+print(len(check_prime))      
+print(check_prime)
