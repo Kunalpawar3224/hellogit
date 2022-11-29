@@ -1,6 +1,6 @@
 #First program for first 100 prime numbers 
 #First impletation 
-# Will convert this in the class
+#Will convert this in the class
 
 def isprime(n):
     if(n==0 or n==1):
@@ -12,15 +12,19 @@ def isprime(n):
 
     return True
 
-check_prime=[]
-for i in range(3434):
- if (isprime(i)):
+def first_primes():
+  check_prime=[]
+  for i in range(3434):
+    if (isprime(i)):
+        
+        a = len(check_prime) 
+        if (a==100):
+          break
     
-     a = len(check_prime) 
-     if (a==100):
-       break
- 
-     check_prime.append(i)
-    
-print(len(check_prime))      
-print(check_prime)
+        check_prime.append(i)
+  return check_prime
+
+if __name__ == '__main__':     
+  primes = first_primes()
+  print(len(primes))      
+  print(primes)
