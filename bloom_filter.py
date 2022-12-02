@@ -32,8 +32,8 @@ def user(check_animal):
                     print(k,': may be present')
                     break
                 else :
-                    print(k, "not present")
+                    print(k, "is definately not present")
     return 'definately not present'       
 
-user_once = user(['eagle','cat','owl','tiger','cat','mouse','lion'])
+user_once = user(['eagle','cat','man','tiger','cat','mouse','lion'])
 
