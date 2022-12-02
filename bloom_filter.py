@@ -29,6 +29,7 @@ def user(check_animal):
         for j in hash_animal():
          
                 if hash(k)==j :
+                    #hash values gives confirmation the element is present or not
                     print(k,': may be present')
                     break
                 else :
