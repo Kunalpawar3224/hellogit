@@ -4,32 +4,32 @@ def anagram():
     '''
     str1_list =[]
     str2_list =[]
-    number =[]
+    
     f= open("/home/kunal/anagram.txt", "r")
-    #
     
     a=f.readline()
 
     while a:
-        #to find the anagram of a, a will iterate line by line
         
         a1 = sorted(a)
 
-        #a=f.readline()
         with open ("/home/kunal/anagram.txt") as file:
             for i in file :
 
                 i1 = sorted(i)
                  
                 if len(a) == len(i):
+                    #Look for the possible anagrams from the strings which has equal lengths
 
                     if a==i :
                         continue
+                        #skip the given string, because it occurs two times in the output
 
                     elif a1 == i1 :
-                        #str1_list.append(i)
-                        print(f"{a}{i}")
-                                
+                        #Confirmation of the anagram, by comparing sorted string
+                        str1_list.append(i.strip())                        
+                        print(a.strip(), str1_list)      
+                str1_list.clear()           
         a=f.readline()                      
-                                   
+                                        
 anagram()
