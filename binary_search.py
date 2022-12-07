@@ -31,7 +31,8 @@ def binary_search(list_items, num):
 	return -1
 	  #if num is not present in list it will return -1
 
-result =binary_search([1,2,3,4,5,6], 5)
-#For this binary_search the list should be sorted in ascending order
+if __name__=='__main--':
+	result =binary_search([1,2,3,4,5,6], 5)
+		#For this binary_search the list should be sorted in ascending order
 
-print(result)
+	print(result)
