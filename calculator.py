@@ -1,4 +1,7 @@
 def Calculator():
+ '''
+ Calculator implementation
+ ''' 
  print('For addition enter: 1')
  print('For substraction enter: 2')
  print('For multiplication enter: 3')
@@ -20,3 +23,6 @@ def Calculator():
             print(a/b)
  else:
         print('enter valid choice')
+
+if __name__=='_main_':  
+    calci = Calculator()
