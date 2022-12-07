@@ -35,6 +35,6 @@ def user(check_animal):
                 else :
                     print(k, "is definately not present")
     return 'definately not present'       
-
-user_once = user(['eagle','cat','man','tiger','cat','mouse','lion'])
+if __name__=='__main__':
+    user_once = user(['eagle','cat','man','tiger','cat','mouse','lion'])
 
