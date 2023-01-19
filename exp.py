@@ -1,0 +1,1 @@
+print("SMUDGE-PROOF WRITING")
