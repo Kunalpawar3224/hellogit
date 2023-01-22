@@ -1,3 +1,15 @@
-from django.contrib import admin
+'''from django.contrib import admin
+from .models import Member
 
 # Register your models here.
+admin.site.register(Member)'''
+
+from django.contrib import admin
+from .models import Member
+
+# Register your models here.
+
+class MemberAdmin(admin.ModelAdmin):
+  list_display = ("firstname", "lastname", "joined_date",)
+  
+admin.site.register(Member, MemberAdmin)
