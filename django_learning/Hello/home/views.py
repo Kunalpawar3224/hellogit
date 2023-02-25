@@ -11,10 +11,11 @@ def index(request):
     #return HttpResponse("this is home page")
 
 def about(request):
-    return HttpResponse("This is about page")    
+    return render(request, 'about.html')
+       
 
 def services(request):
-    return HttpResponse("This is services page") 
+    return render(request, 'services.html')
 
 def contacts(request):
-    return HttpResponse("This is contacts page")         
+    return render(request, 'contacts.html')     
