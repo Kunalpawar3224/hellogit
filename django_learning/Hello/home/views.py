@@ -4,7 +4,8 @@ from django.shortcuts import render, HttpResponse
 
 def index(request):
     context = {
-        'employee_name': "kunal"
+        'employee_name': "kunal",
+        'employee_name2': "Harbhajan"
     }
     return render(request, 'index.html', context)
     #return HttpResponse("this is home page")
