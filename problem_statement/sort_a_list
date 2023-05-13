@@ -1,0 +1,17 @@
+def sort_a_list(listing , choose_order):
+
+    if choose_order == "asc":
+        listing.sort()
+    elif choose_order == "desc":
+        listing.sort(reverse=True)    
+    elif choose_order == "none":
+        listing
+
+    print(listing)
+
+result = sort_a_list([1,2,3,4,7, 6], "desc" )   
+
+
+
+# if __name__=='_main_':  
+#     calci = name_and_age()
