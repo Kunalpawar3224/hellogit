@@ -3,17 +3,17 @@ import sys
 
 def sort_a_list(listing , choose_order):
 
-    if choose_order == "asc":
+    if choose_order == hash("asc"):
         listing.sort()
-    elif choose_order == "desc":
+    elif choose_order == hash("desc"):
         listing.sort(reverse=True)    
-    elif choose_order == "none":
+    elif choose_order == hash("none"):
         listing
 
 
     print(listing) 
 
-result = sort_a_list([3,2,1,8,7], "desc")     
+result = sort_a_list([3,2,1,8,7], hash("desc"))   
 
 # def main():
 #     '''Get argument values, convert, call quad.'''
