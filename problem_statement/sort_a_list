@@ -1,4 +1,5 @@
 # problem statement from : https://www.codecademy.com/resources/blog/python-code-challenges-for-beginners/
+import sys
 
 def sort_a_list(listing , choose_order):
 
@@ -9,11 +10,18 @@ def sort_a_list(listing , choose_order):
     elif choose_order == "none":
         listing
 
-    print(listing)
 
-result = sort_a_list([1,2,3,4,7, 6], "desc" )   
+    print(listing) 
 
+result = sort_a_list([3,2,1,8,7], "desc")     
 
+# def main():
+#     '''Get argument values, convert, call quad.'''
 
-# if __name__=='_main_':  
-#     calci = name_and_age()
+#     s1, s2 = sys.argv[1], sys.argv[2]
+#     #a, b, c = float(s1), float(s2), float(s3)
+#     listing, choose_order = s1,
+#     result = sort_a_list( listing, choose_order)  
+#     print(listing)
+
+# main()
