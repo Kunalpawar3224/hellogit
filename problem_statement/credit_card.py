@@ -3,15 +3,13 @@
 def credit_card(card):
     if len(card) == 16:
         print("it is a credit card")
-        cam = ""
-        car= []
 
         for i in card[:12]:
                 
             #if i <= 8:
                 i = '*'
                 print(i, end='')   
-        print(cam+card[12:16])
+        print(card[12:16])
     else:
         print("it is a not credit card")    
 
