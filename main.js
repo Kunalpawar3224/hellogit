@@ -23,8 +23,12 @@ wall1.position.set(3, 6, 1);
 wallGroup.add(wall1);
 
 const wall2 = new THREE.Mesh(geometry, material);
-wall2.position.set(4, 3, 1);
+wall2.position.set(8, 3, 1);
 wallGroup.add(wall2);
+
+const mesh1 = new THREE.Mesh(geometry, material);
+mesh1.position.set(10, 0, 0);
+scene.add(mesh1);
 
 function animate() {
 	requestAnimationFrame( animate );
