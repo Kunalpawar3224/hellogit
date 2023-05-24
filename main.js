@@ -30,6 +30,22 @@ const mesh1 = new THREE.Mesh(geometry, material);
 mesh1.position.set(10, 0, 0);
 scene.add(mesh1);
 
+var wallMaterials = [
+	new THREE.MeshBasicMaterial({ color: 0xff0000 }), // Red
+	new THREE.MeshBasicMaterial({ color: 0x00ff00 }), // Green
+	new THREE.MeshBasicMaterial({ color: 0x0000ff }), // Blue
+	new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Yellow
+	new THREE.MeshBasicMaterial({ color: 0xff00ff })  // Magenta
+  ];
+
+  // Create the wall geometries
+  var wallGeometry = new THREE.BoxGeometry(1, 1, 0.1);
+
+  // Create the walls and assign materials
+  var wall1 = new THREE.Mesh(wallGeometry, wallMaterials[0]);
+  wall1.position.set(0, 0, -2);
+  wallsGroup.add(wall1);
+
 function animate() {
 	requestAnimationFrame( animate );
 
