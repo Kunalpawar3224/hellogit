@@ -11,6 +11,7 @@ z = [0, 0, 0, 1]
 vertices = [[0, 1, 2], [0, 1, 3], [0, 2, 3], [1, 2, 3]]
 
 tupleList = list(zip(x, y, z))
+print(tupleList)
 
 poly3d = [[tupleList[vertices[ix][iy]] for iy in range(len(vertices[0]))] for ix in range(len(vertices))]
 ax.scatter(x,y,z)
