@@ -36,9 +36,12 @@ for vertex in vertices:
 	print(vertices)
 
 tupleList = list(zip(x, y, z))
+print(tupleList)
 
 poly3d = [[tupleList[faces[ix][iy]] for iy in range(len(faces[0]))] for ix in range(len(faces))]
 
+for iy in range(len(faces[0])):
+	print(iy)
 # Create a 3D plot
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
