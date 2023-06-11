@@ -1,18 +1,14 @@
 import turtle
 
-# create screen
-# root = turtle.Screen()
-# canvas = root.getcanvas()
-# s = turtle.TurtleScreen(canvas)
 
-
+#TODO: Need to remove code duplication, to add the comments
 # create turtle
 t = turtle.Turtle()
 
 # pick the pen up
 t.up() 
 t.goto(-300, 0)
-# pick the pen down
+# pick the pen down, for drawing
 t.down() 
 
 #first half distance of first side of square
@@ -30,6 +26,7 @@ for i in range(3):
 t.up() 
 t.goto(-250, 40)
 t.down() 
+# it will write the text in the square
 t.write("Start", align="center", font=("Arial", 14, "bold"))
 
 	
@@ -54,7 +51,6 @@ t.up()
 t.goto(-50, 40)
 t.down() 
 t.write("Stop", align="center", font=("Arial", 14, "bold"))
-
 	
 t.up() 
 t.goto(100, 0)
