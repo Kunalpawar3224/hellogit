@@ -1,5 +1,7 @@
 import numpy as np
-
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D, art3d
+from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 import assignment_13
 import assignment_14
 
@@ -41,3 +43,6 @@ for vertex in vertices:
 # Now the "rotated_vertices" list contains the transformed vertices
 # You can use these vertices to visualize or manipulate the rotated 3D model
 print(f"rotatted vertices is = {rotated_vertices}")
+
+faces = assignment_14.faces
+assignment_14.draw_model(rotated_vertices, faces)
