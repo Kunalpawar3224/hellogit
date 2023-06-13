@@ -94,9 +94,10 @@ def draw_model(vertices, faces):
 	
 	plt.show()
 
+if __name__ == "__main__":
 
-file_path = 'obj_file.obj'
+	file_path = 'obj_file.obj'
 
-vertices, faces = parse_obj_file(file_path)
+	vertices, faces = parse_obj_file(file_path)
 
-draw_model(vertices, faces)
+	draw_model(vertices, faces)

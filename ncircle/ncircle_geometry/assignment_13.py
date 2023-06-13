@@ -57,6 +57,9 @@ scaling_matrix =[[3, 0, 0],
                 [0 , 3, 0], 
                 [0, 0, 3]]
 
+transformation_scaled_matrix = multiply_matrices(mat_1, scaling_matrix)
+print(transformation_scaled_matrix)
+
 # For rotation around the Y-axis by 45 degrees:
 matrix_y = [[0.7071, 0, 0.7071], 
             [0 , 1, 0], 
@@ -67,22 +70,19 @@ matrix_x = [[1, 0, 0],
             [0 , 0.7071, -0.7071], 
             [0, 0.7071, 0.7071]] 
 
+transformation_around_xy = multiply_matrices(matrix_y, matrix_x)
+print(f"transformation_around_xy = {transformation_around_xy}")
+
+transformation_a_z = multiply_matrices(transformation_z, vector_a)
+print(f"transformation_a_z = {transformation_a_z}")
+
+transformation_a_scaled_matrix = multiply_matrices(transformation_scaled_matrix, vector_a)
+print(f"transformation_a_scaled_matrix = {transformation_a_scaled_matrix}")
+
+transformation_a_xy = multiply_matrices(transformation_around_xy, vector_a)
+print(f"transformation_a_scaled_matrix = {transformation_a_scaled_matrix}")
+
 if __name__ == "__main__":
     
-    transformation_a = multiply_matrices(mat_1, vector_a)
-    transformation_z = multiply_matrices(mat_1, matrix_z)
-    transformation_scaled_matrix = multiply_matrices(mat_1, scaling_matrix)
-    print(transformation_scaled_matrix)
-    transformation_around_xy = multiply_matrices(matrix_y, matrix_x)
-    print(f"transformation_around_xy = {transformation_around_xy}")
-    transformation_a_z = multiply_matrices(transformation_z, vector_a)
-    print(f"transformation_a_z = {transformation_a_z}")
-    transformation_a_scaled_matrix = multiply_matrices(transformation_scaled_matrix, vector_a)
-    print(f"transformation_a_scaled_matrix = {transformation_a_scaled_matrix}")
-    transformation_a_xy = multiply_matrices(transformation_around_xy, vector_a)
-    print(f"transformation_a_xy = {transformation_a_xy}")
-
     multiply_matrices(mat_1, vector_a)
-
-
 
