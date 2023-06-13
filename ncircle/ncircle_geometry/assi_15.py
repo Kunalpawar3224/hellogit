@@ -28,9 +28,13 @@ print(var)
 
 vertices = assignment_14.vertices
 rotated_vertices = []
+print(f"vertices is = {vertices}")
 for vertex in vertices:
     # Apply the rotation matrix by multiplying it with the vertex
-    rotated_vertex = np.matmul(var, vertex)
+    print(f"vertex is = {vertex}")
+    
+    rotated_vertex = np.matmul(vertex, var)
+    #rotated_vertex = assignment_13.multiply_matrices(var, vertex )
     rotated_vertices.append(rotated_vertex)
     print(f"rotatted vertex is = {rotated_vertex}")
 
